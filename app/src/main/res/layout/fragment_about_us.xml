@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/about_us_iv_auf"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/sky"
+        android:text="About Us"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_us_tv_auf"
+        tools:layout_editor_absoluteX="-8dp">
+
+        <TextView
+            android:id="@+id/description_fa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/about_us_description"
+            android:textColor="@color/yellow"
+            android:textDirection="rtl"
+            android:textSize="21sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/about_us_tv_auf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="end"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/about_us"
+        style="@style/text"
+        android:textAlignment="viewEnd"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_us_iv_auf" />
+</androidx.constraintlayout.widget.ConstraintLayout>

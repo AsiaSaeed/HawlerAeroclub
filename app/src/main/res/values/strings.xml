@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Hawler Aeroclub</string>
+    <string name="hawler_aeroclub">یانه‌ی هه‌ولێری ئاسمانی</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="about_us">ده‌رباره‌ی ئێمه</string>
+    <string name="contact">په‌یوه‌ندی</string>
+    <string name="games">یاریه‌کان</string>
+    <string name="League">خوله‌کان</string>
+    <string name="players">یاریزانان</string>
+    <string name="weather">که‌ش و هه‌وا</string>
+    <string name="gallery">گه‌له‌ری</string>
+    <string name="home">home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_us_description">lulylyllyultyltlylutlultlyllulylyllyultyltlylul</string>
+    <string name="mail" />
+    <string name="call" />
+    <string name="send">بنێره‌</string>
 </resources>
