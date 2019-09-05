@@ -8,13 +8,13 @@
 
     <TextView
         android:id="@+id/contact_tv_cf"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:padding="8dp"
         style="@style/text"
         android:text="@string/contact"
-        android:textSize="45sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +37,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginRight="8dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:src="@drawable/mail" />
 
     </LinearLayout>
@@ -61,7 +61,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginRight="8dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:src="@drawable/call" />
 
     </LinearLayout>
@@ -89,7 +89,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginRight="8dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:src="@drawable/comment" />
     </LinearLayout>
 
@@ -101,6 +101,11 @@
         android:layout_gravity="center"
         android:text="@string/send"
         style="@style/button"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:elevation="40dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

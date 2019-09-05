@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="200dp"
     android:background="@color/light_gray">
 
     <ImageView
@@ -20,8 +20,9 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:text="@string/hawler_aeroclub"
         android:textDirection="rtl"
-        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
         android:textSize="22sp"
+        android:padding="8dp"
         style="@style/text"
         app:layout_constraintBottom_toBottomOf="@id/header_iv"
         android:layout_width="match_parent"

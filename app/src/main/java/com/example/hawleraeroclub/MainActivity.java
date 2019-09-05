@@ -1,6 +1,7 @@
 package com.example.hawleraeroclub;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
@@ -11,6 +12,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawerLayout;
@@ -59,7 +62,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 break;
             case R.id.gallery:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new GalleryFragment()).commit();
+                ArrayList<Integer> images=new ArrayList<>();
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                images.add(R.drawable.home);
+                Log.d("Error founder", "onNavigationItemSelected: ");
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new GalleryFragment(images,getApplicationContext() )).commit();
 
                 break;
             case R.id.weather:

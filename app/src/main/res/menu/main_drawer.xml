@@ -12,11 +12,11 @@
             android:title="@string/home" />
         <item
             android:id="@+id/players"
-            android:icon="@drawable/players"
+            android:icon="@drawable/player"
             android:title="@string/players" />
         <item
             android:id="@+id/games"
-            android:icon="@drawable/player"
+            android:icon="@drawable/games"
             android:title="@string/games" />
         <item
             android:id="@+id/league"
@@ -24,20 +24,20 @@
             android:title="@string/League" />
         <item
             android:id="@+id/gallery"
-            android:icon="@drawable/player"
+            android:icon="@drawable/gallery"
             android:title="@string/gallery" />
         <item
             android:id="@+id/weather"
-            android:icon="@drawable/player"
+            android:icon="@drawable/weather"
             android:title="@string/weather" />
 
         <item
             android:id="@+id/about_us"
-            android:icon="@drawable/player"
+            android:icon="@drawable/about_us"
             android:title="@string/about_us" />
         <item
             android:id="@+id/contact"
-            android:icon="@drawable/player"
+            android:icon="@drawable/contact"
             android:title="@string/contact" />
 
     </group>
