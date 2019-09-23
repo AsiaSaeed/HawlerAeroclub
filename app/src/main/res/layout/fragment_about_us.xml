@@ -19,25 +19,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/about_us_tv_auf"
-        tools:layout_editor_absoluteX="-8dp">
-
-        <TextView
-            android:id="@+id/description_fa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="@string/about_us_description"
-            android:textColor="@color/yellow"
-            android:textDirection="rtl"
-            android:textSize="21sp" />
-    </ScrollView>
-
     <TextView
         android:id="@+id/about_us_tv_auf"
         android:layout_width="match_parent"
@@ -54,4 +35,32 @@
         android:textStyle="bold"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/about_us_iv_auf" />
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_us_tv_auf"
+        tools:layout_editor_absoluteX="-8dp">
+
+        <TextView
+            android:id="@+id/description_fa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/about_us_description"
+            android:textColor="@color/yellow"
+            android:textDirection="rtl"
+            android:textSize="21sp"
+            />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

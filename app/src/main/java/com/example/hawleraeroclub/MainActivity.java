@@ -1,7 +1,6 @@
 package com.example.hawleraeroclub;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
@@ -11,9 +10,15 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.hawleraeroclub.Fragment.AboutUsFragment;
+import com.example.hawleraeroclub.Fragment.ContactFragment;
+import com.example.hawleraeroclub.Fragment.GalleryFragment;
+import com.example.hawleraeroclub.Fragment.HomeFragment;
+import com.example.hawleraeroclub.Fragment.WeatherFragment;
+import com.example.hawleraeroclub.Fragment.XwlakananFragment;
+import com.example.hawleraeroclub.Fragment.YarizananFragment;
+import com.example.hawleraeroclub.Fragment.YaryakanFragment;
 import com.google.android.material.navigation.NavigationView;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawerLayout;
@@ -62,25 +67,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 break;
             case R.id.gallery:
-                ArrayList<Integer> images=new ArrayList<>();
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                images.add(R.drawable.home);
-                Log.d("Error founder", "onNavigationItemSelected: ");
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new GalleryFragment(images,getApplicationContext() )).commit();
+
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new GalleryFragment(getApplicationContext())).commit();
 
                 break;
             case R.id.weather:

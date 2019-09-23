@@ -22,7 +22,7 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.GalleryV
     public GalleryAdapter(Context context, ArrayList<Integer> images) {
         this.images = images;
         this.context = context;
-        mInflater= LayoutInflater.from(this.context);
+        mInflater = LayoutInflater.from(this.context);
     }
 
     @NonNull
@@ -30,6 +30,7 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.GalleryV
     public GalleryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View mItemView = mInflater.inflate(R.layout.galler_item_design,
                 parent, false);
+
         return new GalleryViewHolder(mItemView);
     }
 
@@ -43,12 +44,23 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.GalleryV
         return images.size();
     }
 
-    public class GalleryViewHolder extends RecyclerView.ViewHolder {
+    public class GalleryViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView galleryIV;
 
         public GalleryViewHolder(@NonNull View itemView) {
             super(itemView);
             galleryIV = itemView.findViewById(R.id.gallery_iv_item_design);
+
+            itemView.setOnClickListener(this);
+        }
+
+
+        @Override
+        public void onClick(View v) {
+
+
         }
     }
+
+
 }

@@ -7,17 +7,21 @@
     android:background="@color/light_gray">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:layout_margin="8dp"
-        android:text="@string/home"
-        android:textColor="#000"
-        android:textSize="42sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/g08"
+        android:scaleType="fitCenter"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/slider"
+        android:text="@string/notification"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

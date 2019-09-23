@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Hawler Aeroclub</string>
-    <string name="hawler_aeroclub">یانه‌ی هه‌ولێری ئاسمانی</string>
+    <string name="app_name">Erbil Aeroclub</string>
+    <string name="erbil_aeroclub">یانه‌ی هه‌ولێری ئاسمانی</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -14,8 +14,14 @@
     <string name="home">home</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="about_us_description">lulylyllyultyltlylutlultlyllulylyllyultyltlylul</string>
-    <string name="mail" />
-    <string name="call" />
+    <string name="about_us_description">یانەی هەولێری ئاسمانی </string>
+    <string name="mail" >info@erbilaeroclub.com</string>
+    <string name="call" >0750 332 22 32</string>
     <string name="send">بنێره‌</string>
+    <string name="name">ناو</string>
+    <string name="blood_type">جۆری خوێن</string>
+    <string name="work_type" >جۆری پیشە</string>
+    <string name="phone_unmber">ژمارە تەلەفۆن</string>
+    <string name="birth_day">لەدایکبوون</string>
+    <string name="notification">ئاگاداری</string>
 </resources>
