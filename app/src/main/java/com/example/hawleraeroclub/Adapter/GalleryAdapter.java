@@ -1,66 +1,54 @@
 package com.example.hawleraeroclub.Adapter;
 
 import android.content.Context;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.hawleraeroclub.R;
 
-import java.util.ArrayList;
+public class GalleryAdapter extends BaseAdapter {
+    private Context context;
 
-public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.GalleryViewHolder> {
-    Context context;
-    ArrayList<Integer> images;
-    LayoutInflater mInflater;
-    LayoutInflater layoutInflater;
 
-    public GalleryAdapter(Context context, ArrayList<Integer> images) {
-        this.images = images;
+    public Integer [] images={
+            R.drawable.g01,R.drawable.g02,
+            R.drawable.g03,R.drawable.g04,
+            R.drawable.g05,R.drawable.g06,
+            R.drawable.g07,R.drawable.g08,
+            R.drawable.g09,R.drawable.g10,
+            R.drawable.g11,R.drawable.g12,
+            R.drawable.g13,R.drawable.g14,
+            R.drawable.g15,R.drawable.g16
+    };
+
+    public GalleryAdapter(Context context) {
         this.context = context;
-        mInflater = LayoutInflater.from(this.context);
-    }
-
-    @NonNull
-    @Override
-    public GalleryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View mItemView = mInflater.inflate(R.layout.galler_item_design,
-                parent, false);
-
-        return new GalleryViewHolder(mItemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull GalleryViewHolder holder, int position) {
-        holder.galleryIV.setImageResource(images.get(position));
+    public int getCount() {
+        return images.length;
     }
 
     @Override
-    public int getItemCount() {
-        return images.size();
+    public Object getItem(int position) {
+        return images[position];
     }
 
-    public class GalleryViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        ImageView galleryIV;
-
-        public GalleryViewHolder(@NonNull View itemView) {
-            super(itemView);
-            galleryIV = itemView.findViewById(R.id.gallery_iv_item_design);
-
-            itemView.setOnClickListener(this);
-        }
-
-
-        @Override
-        public void onClick(View v) {
-
-
-        }
+    @Override
+    public long getItemId(int position) {
+        return 0;
     }
 
-
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        ImageView imageView=new ImageView(context);
+        imageView.setImageResource(images[position]);
+        imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+        imageView.setLayoutParams(new GridView.LayoutParams(220,240));
+        return imageView;
+    }
 }

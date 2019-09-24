@@ -1,4 +1,4 @@
-package com.example.hawleraeroclub;
+package com.example.hawleraeroclub.Activity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -18,6 +18,7 @@ import com.example.hawleraeroclub.Fragment.WeatherFragment;
 import com.example.hawleraeroclub.Fragment.XwlakananFragment;
 import com.example.hawleraeroclub.Fragment.YarizananFragment;
 import com.example.hawleraeroclub.Fragment.YaryakanFragment;
+import com.example.hawleraeroclub.R;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
